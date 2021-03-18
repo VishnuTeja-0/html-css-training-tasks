@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+	padding: 0% 15%;
+	background-image: url("../resources/bg.jpg");
+	background-color: #7777EE;
+	font-family: arial, sans-serif;
+}
+
+#HeaderBar {
+	float : right;
+	background-color: #333;
+	opacity: 0.5;
+}
+
+#HeaderList {
+	list-style-type: none;
+	margin: 5px 0px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#HeaderList li {
+	float = right;
+	display: inline-block;
+  	padding: 0 5px;
+}
