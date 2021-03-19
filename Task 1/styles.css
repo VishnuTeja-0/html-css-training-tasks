@@ -6,7 +6,7 @@ body {
 
 .headerBlock {
 	margin: 0;
-	padding-left: 30px;
+	padding-left: 20px;
 	overflow: hidden;
 	background-color: #008ECC
 }
@@ -14,7 +14,17 @@ body {
 .headerBlock h1 {
 	color: #ffffff;
 	font-family: arial, sans-serif;
-	font-size: 3em;
+	font-size: 3.5em;
+}
+
+.navigationBar {
+	background-color: #333;
+	align-items: center;
+}
+
+.navigationBar div {
+	margin-top: 5px;
+	padding: 0 20px 0 20px;
 }
 
 .navBarList {
@@ -22,13 +32,13 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    display: inline;
 }
 
 .navBarList li {
 	float = left;
 	display: inline-block;
-  	padding: 10px 30px;
+  	padding: 10px 20px;
 }
 
 .navBarList li a {
@@ -38,6 +48,10 @@ body {
 }
 
 .navBarList li:hover {
+	background-color: #111;
+}
+
+.navigationBar div:hover {
 	background-color: #111;
 }
 

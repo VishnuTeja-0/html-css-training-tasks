@@ -6,21 +6,25 @@ body {
 	font-family: arial, sans-serif;
 }
 
-#HeaderBar {
+.headerBar {
 	float : right;
 	background-color: #333;
 	opacity: 0.5;
 }
 
-#HeaderList {
+.headerList {
 	list-style-type: none;
 	margin: 5px 0px;
 	padding: 0;
 	overflow: hidden;
 }
 
-#HeaderList li {
+.headerList li {
 	float = right;
 	display: inline-block;
   	padding: 0 5px;
+}
+
+.headerList li a{
+	text-decoration: none;
 }
