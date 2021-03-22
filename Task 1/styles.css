@@ -24,7 +24,7 @@ body {
 
 .navigationBar div {
 	margin-top: 5px;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
 }
 
 .navBarList {
@@ -97,3 +97,4 @@ body {
 .mainContentBlock p{
 	margin-top: 10px;
 }
+
