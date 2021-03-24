@@ -7,7 +7,7 @@ body {
 	font-weight: 12;
 }
 
-.headerBar {
+.header {
 	float : right;
 	background: rgb(51, 51, 51, 0.5);
 	clear:left;
@@ -37,13 +37,13 @@ body {
 	word-spacing: 2px;
 }
 
-.headerList .bordered:after {
+.headerList .hasSeparator:after {
 	content: "|";
 	color: white;
 	font-size: 50%;
 }
 
-.navigationBar {
+.navigation {
 	background: rgba(16, 34, 58, 0.9);
 	align-items: center;
 	clear: right;
@@ -54,7 +54,7 @@ body {
 	border-color: rgba(16, 34, 58, 0.9);
 }
 
-.navigationBarBorder {
+.navigationBorder {
 	margin: 3px;
 	border-style: solid;
 	border-color: rgba(255, 255, 255, 0.1);
@@ -72,26 +72,26 @@ body {
 	z-index: 1;
 }
 
-.navBarList {
+.navigationList {
 	list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.navBarList li {
+.navigationList li {
 	display: inline-block;
 	float: right;
 	padding: 5px 0;
 }
 
-.navBarList li a {
+.navigationList li a {
 	color: #ADD8E6;
 	text-decoration: none;
 	margin: 0 20px;
 }
 
-.navBarList .bordered:after {
+.navigationList .hasSeparator:after {
 	content: "|";
 	color: white;
 	background: none;
@@ -106,7 +106,7 @@ body {
 	color: white !important;
 }
 
-.mottoBar {
+.titleBar {
 	color: white;
 	letter-spacing: 8px;
 	word-spacing: 10px;
@@ -115,12 +115,12 @@ body {
 	padding: 30px 25px 25px 40px;
 }
 
-.mottoBar h1 {
+.titleBar h1 {
 	margin: 5px 0px;
 	font-weight: 400;
 }
 
-.homeContentBlock {
+.content {
 	background: rgba(16, 34, 58, 0.9);
 	color: white;
 	font-size: 80%;
@@ -133,30 +133,24 @@ body {
 	align-content: center;
 }
 
-.homeContentBlock p {
-	margin-left: 10px;
-	margin-right: 25px;
-}
-
-.homeContentColumn p a {
-	color: #ADD8E6;
-	text-decoration-color: #ADD8E6;
+.homeContentColumn p {
+	margin: 10px 25px 0;
 }
 
 .homeContentColumn .imageTile img {
 	width: 260px;
 	height: 110px;
-	margin-left: 10px;
+	margin: 0 25px;
 }
 
-.footerBar {
+.footer {
 	background: rgb(51, 51, 51, 0.5);
 	align-content: center;
 	font-size: 70%;
 	margin-top: 5px;
 }
 
-.footerBar p {
+.footer p {
 	color: white;
 	display: inline-block;
 	margin: 0px 0px 0px 250px;
@@ -180,75 +174,69 @@ body {
 	padding: 0px 4px;
 }
 
-.footerList .bordered:after {
+.footerList .hasSeparator:after {
 	content: "|";
 	color: white;
 	font-size: 90%;
 }
 
-.servicesContentColumnSide {
+.servicesContentLeftColumn {
 	float: left;
 	width: 30%;
 }
 
-.servicesContentColumnText {
+.servicesContentRightColumn {
 	float: left;
 	width: 70%;
 }
 
-.servicesContentBlock {
-	background: rgba(16, 34, 58, 0.9);
-	color: white;
-	font-size: 80%;
+.servicesContent {
 	margin-top: 50px;
-	line-height: 150%;
 }
 
-.bodyLink {
+.contentLink {
 	text-decoration-color: #ADD8E6;
 	color: #ADD8E6;
 }
 
-.servicesContentColumnSide img {
+.servicesContentLeftColumn img {
 	width: 80%;
 	height: 80%;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
-.servicesLinksBlock {
-	border-top-width: 1px;
-	border-top-color: rgba(189, 189, 189, 0.3);
-	border-top-style: solid;
+.servicesLinks {
+	border-width: 1px;
+	border-color: rgba(189, 189, 189, 0.3);
+	border-style: solid;
 
-	border-bottom-width: 1px;
-	border-bottom-color: rgba(189, 189, 189, 0.3);
-	border-bottom-style: solid;
+	border-left-style: none;
+	border-right-style: none;
 
 	margin-right: 60px;
 }
 
-.servicesContactBlock {
-	border-top-width: 1px;
-	border-top-color: rgba(189, 189, 189, 0.6);
-	border-top-style: solid;
+.servicesContact {
+	border-width: 1px;
+	border-color: rgba(189, 189, 189, 0.6);
+	border-style: solid;
 
-	border-bottom-width: 1px;
-	border-bottom-color: rgba(189, 189, 189, 0.6);
-	border-bottom-style: solid;
+	border-left-style: none;
+	border-right-style: none;
 
 	margin-top: 10px;
 	padding: 10px 10px 10px 30px;
 	background-color: rgba(16,34,58,0.4);
 }
 
-.servicesContentColumnText h2 {
+.servicesContentRightColumn h2 {
 	color: #ADD8E6;
 	letter-spacing: 2px;
-	margin-top: 5px;
+	margin-top: 0px;
 }
 
-.servicesContactBlock p {
+.servicesContact p {
 	margin-top: 0px;
 	margin-bottom: 5px;
 	font-size: 120%;
@@ -257,8 +245,7 @@ body {
 .linksList {
 	list-style-type: none;
 	padding-left: 0;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
 .button {
@@ -283,15 +270,15 @@ body {
 	border-top-style: none;
 }
 
-.homeContentBlock .contentBorder {
-	padding: 20px;
+.homeContent .contentBorder {
+	padding: 20px 15px 15px;
 }
 
-.servicesContentBlock .contentBorder {
-	padding: 25px;
+.servicesContent .contentBorder {
+	padding: 30px;
 }
 
-.gradBordered {
+.hasGradientBorder {
 	border-style: ridge;
 	border-width: 4px;
 	border-image: linear-gradient(to top, rgba(16, 34, 58, 0.9), rgba(0, 0, 0, 0)) 1;
@@ -304,3 +291,6 @@ body {
   clear: both;
 }
 
+.brightenedImage {
+	filter: brightness(180%);
+}
