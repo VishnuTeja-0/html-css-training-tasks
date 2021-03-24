@@ -4,6 +4,7 @@ body {
 	background-image: url("../resources/bg.jpg");
 	background-color: #7777EE;
 	font-family: "calibri", sans-serif;
+	font-weight: 12;
 }
 
 .headerBar {
@@ -32,7 +33,7 @@ body {
 	color: white;
 	text-align: center;
 	font-size: 60%;
-	padding-right: 5px;
+	padding: 0 5px;
 	word-spacing: 2px;
 }
 
@@ -46,9 +47,19 @@ body {
 	background: rgba(16, 34, 58, 0.9);
 	align-items: center;
 	clear: right;
-	padding: 20px 20px;
 	position: relative;
 	z-index: 0;
+	border-style: ridge;
+	border-width: 2px;
+	border-color: rgba(16, 34, 58, 0.9);
+}
+
+.navigationBarBorder {
+	margin: 3px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.1);
+	border-width: 1px;
+	padding: 10px;
 }
 
 .logo {
@@ -71,6 +82,7 @@ body {
 .navBarList li {
 	display: inline-block;
 	float: right;
+	padding: 5px 0;
 }
 
 .navBarList li a {
@@ -87,8 +99,11 @@ body {
 
 .active{
 	background-color: rgba(72,104,128,255);
-	box-shadow: 20px 0 0 rgba(72,104,128,255), -20px 0 0 rgba(72,104,128,255);
+	border-style: hidden;
+	border-radius: 2px;
+	box-shadow: 23px 0px 0 rgba(72,104,128,255), -23px 0px 0 rgba(72,104,128,255), 0px 5px 0 rgba(72,104,128,255), 0 -5px 0 rgba(72,104,128,255);
 	padding: 5px 0;
+	color: white !important;
 }
 
 .mottoBar {
@@ -109,29 +124,29 @@ body {
 	background: rgba(16, 34, 58, 0.9);
 	color: white;
 	font-size: 80%;
-	padding: 20px;
 	line-height: 150%;
 }
 
 .homeContentColumn {
 	float:left;
 	width: 33.33%;
-}
-
-.homeContentBlock:after {
-  content: "";
-  display: table;
-  clear: both;
+	align-content: center;
 }
 
 .homeContentBlock p {
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 10px;
+	margin-right: 25px;
 }
 
 .homeContentColumn p a {
 	color: #ADD8E6;
 	text-decoration-color: #ADD8E6;
+}
+
+.homeContentColumn .imageTile img {
+	width: 260px;
+	height: 110px;
+	margin-left: 10px;
 }
 
 .footerBar {
@@ -149,7 +164,7 @@ body {
 
 .footerList {
 	display: inline-block;
-	padding-left: 5px;
+	padding-left: 2px;
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
@@ -181,17 +196,10 @@ body {
 	width: 70%;
 }
 
-.servicesContentBlock:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .servicesContentBlock {
 	background: rgba(16, 34, 58, 0.9);
 	color: white;
 	font-size: 80%;
-	padding: 25px 25px;
 	margin-top: 50px;
 	line-height: 150%;
 }
@@ -229,8 +237,9 @@ body {
 	border-bottom-color: rgba(189, 189, 189, 0.6);
 	border-bottom-style: solid;
 
+	margin-top: 10px;
 	padding: 10px 10px 10px 30px;
-	background-color: rgba(16,34,58,255);
+	background-color: rgba(16,34,58,0.4);
 }
 
 .servicesContentColumnText h2 {
@@ -253,10 +262,45 @@ body {
 }
 
 .button {
+	padding: 2px 8px;
 	background-image: linear-gradient(#135C78, #05273A);
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: #135C78;
 }
 
 .button a {
 	color: white;
 	text-decoration: none;
+	font-size: 85%;
 }
+
+.contentBorder {
+	margin: 1px;
+	border-style: ridge;
+	border-width: 1px;
+	border-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)) 1;
+	border-top-style: none;
+}
+
+.homeContentBlock .contentBorder {
+	padding: 20px;
+}
+
+.servicesContentBlock .contentBorder {
+	padding: 25px;
+}
+
+.gradBordered {
+	border-style: ridge;
+	border-width: 4px;
+	border-image: linear-gradient(to top, rgba(16, 34, 58, 0.9), rgba(0, 0, 0, 0)) 1;
+	border-top-style: none;
+}
+
+.contentBorder:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
