@@ -104,16 +104,20 @@ body {
 .navSearchBar {
 	float: right;
 	display: inline-block;
-	margin: 8px 150px 0 0;
+	margin: 8px 155px 0 0;
 }
 
 .navSearchBar .txt {
+	font-size: 90%;
+	padding-right: 30px;
 	border-style: inset;
 	border-width: 2px;
 	border-color: rgba(215, 215, 215, 1);
 }
 
 .navSearchBar .btn {
+	font-size: 95%;
+	margin-left: 5px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: rgba(215, 215, 215, 1);
@@ -163,7 +167,7 @@ body {
 .bridalRegistryLink {
 	float: right;
 	display: inline-block;
-	margin: 10px 150px 0 0;
+	margin: 10px 200px 0 5px;
 }
 
 .bridalRegistryLink a {
@@ -394,9 +398,14 @@ body {
 
 .emailSignUpBar .txt {
 	font-size: 95%;
+	padding-right: 40px;
+	border-style: inset;
+	border-width: 2px;
+	border-color: rgba(120, 120, 120, 1);
 }
 
 .emailSignUpBar .btn {
+	margin-left: 5px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: rgba(215, 215, 215, 1);
