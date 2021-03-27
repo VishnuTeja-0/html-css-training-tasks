@@ -152,14 +152,19 @@ body {
 
 }
 
-.bridalRegistryTab {
+.bridalRegistryImage{
 	float: right;
 	display: inline-block;
-	margin: 0 150px 0 0;
 	text-align: center;
 }
 
-.bridalRegistryTab a {
+.bridalRegistryLink {
+	float: right;
+	display: inline-block;
+	margin: 10px 150px 0 0;
+}
+
+.bridalRegistryLink a {
 	color: rgba(0,40,150,255);
 	text-decoration: none;
 }
@@ -170,6 +175,7 @@ body {
 
 .contentImage {
 	width: 65%;
+	height: 410px;
 	float: left;
 
 	border-style: solid;
@@ -194,6 +200,13 @@ body {
 
 }
 
+.contentTextBorder {
+	margin: 5px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-width: 1px;
+}
+
 .contentText h1 {
 	margin: 30px 50px 0;
 	font-size: 180%;
@@ -213,7 +226,7 @@ body {
 .contentList {
 	list-style-type: none;
 	padding-left: 0px;
-	margin: 20px 50px 0px;
+	margin: 15px 50px 0px;
 }
 
 .contentList li {
@@ -223,7 +236,7 @@ body {
 .contentList .separator {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	border-bottom-color: rgba(255, 255, 255, 0.3);
+	border-bottom-color: rgba(255, 255, 255, 0.2);
 
 }
 
@@ -231,6 +244,7 @@ body {
 	color:white;
 	text-decoration: none;
 	margin: 5px 0;
+	font-size: 95%;
 }
 
 .content:after {
@@ -240,7 +254,7 @@ body {
 }
 
 .dressTableLink {
-	margin: 10px 50px 12px !important;
+	margin: 10px 50px 10px !important;
 }
 
 .dressTableLink a {
@@ -259,6 +273,66 @@ body {
 .promoItem {
 	float: left;
 	width: 33%;
+	position: relative;
+}
+
+.promoItem h3 {
+	position: relative;
+	color: rgba(90, 90, 90, 1);
+	font-family: "arial", sans-serif;
+	font-weight: 100;
+	font-size: 110%;
+	margin: 20px 15px 5px;
+	z-index: 1;
+}
+
+.promoItem p {
+	position: relative;
+	color: rgba(150, 150, 150, 1);
+	font-size: 85%;
+	margin: 0px 15px 15px;
+	z-index: 1;
+}
+
+.promoItem a {
+	position: relative;
+	color: rgba(0,40,100,255);
+	text-decoration: none;
+	float: right;
+	margin: 0 15px;
+	z-index: 1;
+}
+
+.promoIten img {
+	position: relative;
+	z-index: 0;
+}
+
+.promoGlassImage {
+	margin-top: -85px;
+	margin-bottom: -4px;	
+}
+
+.promoPlateImage {
+	margin-top: -50px;
+	margin-bottom: -4px;
+}
+
+.promoAlbumImage {
+	float: right;
+	margin-top: -117px;
+	margin-right: -8px;
+}
+
+.clearanceSaleContent {
+	float: left !important;
+	margin-right: 120px !important;
+}
+
+.promoItem.separator {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: rgba(215, 215, 215, 1);
 }
 
 .promoContent:after {
