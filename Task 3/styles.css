@@ -61,11 +61,11 @@ body {
 	background-color: rgba(215, 215, 215, 1);
 	font-size: 85%;
 	margin: 0px -150px;
+	padding: 1px;
 }
 
 .navBorder {
-	padding: 10px 0;
-	margin: 2px;
+	margin: 1px;
 
 	border-style: solid;
 	border-color: white;
@@ -81,6 +81,8 @@ body {
 }
 
 .navList li{
+	margin-bottom: -4px;
+	padding: 8px 0;
 	float: left;
 	display: inline-block;
 
@@ -102,7 +104,7 @@ body {
 .navSearchBar {
 	float: right;
 	display: inline-block;
-	margin: 0 150px 0 0;
+	margin: 8px 150px 0 0;
 }
 
 .navSearchBar .txt {
@@ -379,6 +381,10 @@ body {
 .contactMessage {
 	clear: left;
 	margin: 5px 0px 2.5px 5px;
+}
+
+.contactMessage a {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .copyrightMessage
