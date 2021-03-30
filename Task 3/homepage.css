@@ -122,8 +122,8 @@ body {
 	font-size: 95%;
 	margin-left: 5px;
 	border-style: solid;
-	border-width: 2px;
-	border-color: rgba(215, 215, 215, 1);
+	border-width: 1px;
+	border-color: rgba(150, 150, 150, 1);
 	border-radius: 8px;
 	background-color: white;
 }
@@ -132,7 +132,7 @@ body {
 	clear: both;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	border-bottom-color: black;
+	border-bottom-color: rgba(215, 215, 215, 1);
 	margin: 0px -150px;
 	padding: 5px 0;
 }
@@ -182,31 +182,27 @@ body {
 	margin-top: 10px;
 }
 
-.contentImage {
-	width: 65%;
-	height: 410px;
-	float: left;
-
+.content > * {
 	border-style: solid;
 	border-width: 10px;
 	border-color: white;
 	border-top-style: none;
 }
 
+.contentImage {
+	width: 65%;
+	height: 437px;
+	float: left;	
+}
+
 .contentText{
 	width: 32.1%;
 	float: right;
 	color: white;
-	font-weight: 100;
 	background-color: rgba(55, 55, 55, 255);
 	margin-right: 0;
 
-	border-style: solid;
-	border-width: 10px;
-	border-color: white;
 	border-left-style: none;
-	border-top-style: none;
-
 }
 
 .contentTextBorder {
@@ -214,20 +210,18 @@ body {
 	border-style: solid;
 	border-color: rgba(255, 255, 255, 0.2);
 	border-width: 1px;
+	font-family: "arial", sans-serif;
+	font-weight: 100;
 }
 
-.contentText h1 {
+.contentTextBorder h1 {
 	margin: 30px 50px 0;
 	font-size: 180%;
-	font-family: "arial", sans-serif;
-	font-weight: 100;
 }
 
-.contentText p {
+.contentTextBorder p {
 	margin: 20px 50px 0;
-	font-family: "arial", sans-serif;
 	font-size: 80%;
-	font-weight: 100;
 	line-height: 25px;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -276,6 +270,7 @@ body {
 	background-color: white;
 	border-style: solid;
 	border-width: 10px;
+	padding: 10px 0;
 	border-color: rgba(55, 55, 55, 255);
 }
 
@@ -285,46 +280,45 @@ body {
 	position: relative;
 }
 
-.promoItem h3 {
+.promoItem > *:not(img) {
 	position: relative;
+	z-index: 1;
+}
+
+.promoItem h3 {	
 	color: rgba(90, 90, 90, 1);
 	font-family: "arial", sans-serif;
 	font-weight: 100;
 	font-size: 110%;
-	margin: 20px 15px 5px;
-	z-index: 1;
+	margin: 10px 15px 5px;
+	
 }
 
 .promoItem p {
-	position: relative;
 	color: rgba(150, 150, 150, 1);
 	font-size: 85%;
 	margin: 0px 15px 15px;
-	z-index: 1;
 }
 
 .promoItem a {
-	position: relative;
 	color: rgba(0,40,100,255);
 	text-decoration: none;
 	float: right;
 	margin: 0 15px;
-	z-index: 1;
 }
 
-.promoIten img {
+.promoItem img {
 	position: relative;
 	z-index: 0;
+	margin-bottom: -14px;
 }
 
 .promoGlassImage {
-	margin-top: -85px;
-	margin-bottom: -4px;	
+	margin-top: -85px;		
 }
 
 .promoPlateImage {
 	margin-top: -50px;
-	margin-bottom: -4px;
 }
 
 .promoAlbumImage {
@@ -399,20 +393,21 @@ body {
 	margin: 2.5px 0px 5px 5px;
 }
 
-.emailSignUpBar .txt {
+.emailSignUpBar > input {
 	font-size: 95%;
+	border-width: 2px;
+}
+
+.emailSignUpBar .txt {
 	padding-right: 40px;
 	border-style: inset;
-	border-width: 2px;
 	border-color: rgba(120, 120, 120, 1);
 }
 
 .emailSignUpBar .btn {
 	margin-left: 5px;
 	border-style: solid;
-	border-width: 2px;
 	border-color: rgba(215, 215, 215, 1);
 	border-radius: 6px;
 	background-color: white;
-	font-size: 95%;
 }
