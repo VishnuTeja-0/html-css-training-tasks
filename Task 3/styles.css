@@ -25,7 +25,7 @@ body {
 .headerList li {
 	display: inline-block;
 	margin: 0;
-	padding: 0 0 0 5px;
+	padding: 0;
 }
 
 .headerList li a{
@@ -35,7 +35,11 @@ body {
 }
 
 .headerList li a:not(.internalLink) {
-	margin: 0 10px 0 5px;
+	margin: 0 10px;
+}
+
+.headerList li img {
+	margin-left: 10px;
 }
 
 .internalLink {
@@ -44,7 +48,6 @@ body {
 
 .checkoutLink {
 	color: rgba(0,40,100,255) !important;
-	text-decoration: none;
 	margin-left: 5px;
 }
 
